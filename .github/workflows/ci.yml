@@ -57,7 +57,16 @@ jobs:
         run: npm run lint
 
       - name: Run Frontend Tests
-        run: npm run test
+        run: npm run test > vitest-error.log 2>&1
+
+      - name: Upload Test Logs on Failure
+        if: failure()
+        run: |
+          git config --global user.name "CI Bot"
+          git config --global user.email "ci-bot@example.com"
+          git add vitest-error.log
+          git commit -m "chore: save CI test logs [skip ci]"
+          git push origin main
 
       - name: Build Frontend Application
         run: npm run build
