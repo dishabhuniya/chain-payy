@@ -34,12 +34,8 @@ jobs:
       - name: Run Contract Tests
         run: cargo test
 
-      - name: Install Stellar CLI
-        run: |
-          cargo install --locked stellar-cli --version 26.1.0 --features opt
-
       - name: Build Soroban Contract
-        run: stellar contract build
+        run: cargo build --target wasm32-unknown-unknown --release
 
   frontend:
     name: Build & Test React Frontend
@@ -55,7 +51,7 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
-        run: npm ci
+        run: npm ci --legacy-peer-deps
 
       - name: Lint Frontend
         run: npm run lint
