@@ -19,6 +19,23 @@ ChainPay resolves these issues by introducing an on-chain **Smart Payment Reques
 3. **Real-time Event Tracking**: Real-time event emitters notify the frontend instantly of invoice creation, cancellation, and payment logs.
 
 ---
+## 🌐 Live Demo
+
+**Live Application:**
+
+https://chain-pay-alpha.vercel.app/
+---
+
+## 📹 Demo Video
+
+Watch the complete project demonstration:
+
+https://youtu.be/LipH_gYG1D4
+---
+
+## 📂 GitHub Repository
+
+https://github.com/dishabhuniya/chain-payy
 
 ## 🚀 Features
 
@@ -73,6 +90,29 @@ ChainPay resolves these issues by introducing an on-chain **Smart Payment Reques
   - Payer and Creator auth checks (`require_auth()`).
 
 ---
+## 📸 Screenshots
+
+### Home Dashboard
+
+![Home Dashboard](screenshots/front.png)
+
+### Wallet Connection
+
+![Wallet Connection](screenshots/wallet.png)
+
+### Connected Wallet & Balance
+
+![Connected Wallet](screenshots/connected.png)
+
+### Transaction Success
+
+![Transaction Success](screenshots/trans4.png)
+
+### Mobile Responsive View
+
+![Mobile Responsive View](screenshots/mobile.jpeg)
+
+---
 
 ## 🔧 Setup & Local Development
 
@@ -123,6 +163,15 @@ npm run test
 ```
 
 ---
+
+Contract Verification Details
+
+Contract ID:
+CDDXP4MWAHLV6TEYVG6I62CBP2INMSJ32Z33BKCBFTOEVSX3BB26WKUB
+Contract Explorer (Stellar Testnet):
+https://lab.stellar.org/smart-contracts/contract-explorer?$=network$id=testnet&label=Testnet&horizonUrl=https:////horizon-testnet.stellar.org&rpcUrl=https:////soroban-testnet.stellar.org&passphrase=Test%20SDF%20Network%20/;%20September%202015;&smartContracts$explorer$contractId=CDDXP4MWAHLV6TEYVG6I62CBP2INMSJ32Z33BKCBFTOEVSX3BB26WKUB;;
+
+Please use the above Contract Explorer link to verify the deployed Soroban smart contract on the Stellar Testnet.
 
 ## 🚀 Smart Contract Deployment
 
